@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+#wrap {
+  width: 1000px;
+  height: 650px;
+  margin: 0 auto;
+  background: #c9c;
+}
+
+#wrap #header {
+  float: left;
+  width: 200px;
+  height: 100%;
+}
+#wrap #header h1 {
+  width: 100%;
+  height: 100px;
+  background: rgb(96, 96, 224);
+}
+#wrap #header #nav {
+  width: 100%;
+  height: 550px;
+  background: #cdd;
+}
+
+/* 메인메뉴버튼  */
+#wrap #header #nav > ul {
+  display: inline-block;
+  margin: 15px 15px;
+}
+#wrap #header #nav > ul > li {
+  width: 170px;
+  text-align: center;
+}
+#wrap #header #nav > ul > li > a {
+  display: block;
+  line-height: 50px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  background: #f0f0f0;
+}
+
+#wrap #header #nav > ul > li > a.on {
+  background: #c9c;
+  color: #fff;
+}
+
+/* * 서브 메뉴버튼  */
+
+#wrap #header #nav > ul > li > .sub.on {
+  height: 180px;
+  border-top-width: 1px;
+}
+#wrap #header #nav > ul > li > .sub {
+  height: 0;
+  width: 100%;
+  border-top: 0px solid #ccc;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+#wrap #header #nav > ul > li > .sub ul {
+  width: 100%;
+}
+#wrap #header #nav > ul > li > .sub ul li {
+  width: 100%;
+}
+#wrap #header #nav > ul > li > .sub ul li a {
+  display: block;
+  width: 100%;
+  line-height: 45px;
+  background: #dee;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+#wrap #header #nav > ul > li > .sub ul li a:hover {
+  background: #999;
+  color: #ddd;
+}
+
+#wrap #main {
+  float: left;
+  width: 800px;
+  height: 550px;
+}
+
+#wrap #main #section1 {
+  width: 100%;
+  height: 350px;
+  background: #9c9;
+}
+
+/* 메인슬라이드 */
+
+#wrap #main #section1 .slide-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section1 .slide-container .slide-view {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap {
+  width: calc(800px * 6);
+  height: 350px;
+  position: relative;
+  left: 0;
+  margin-left: -800px;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide {
+  float: left;
+  width: 800px;
+  height: 350px;
+  background: url(../img/3.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide0 {
+  background-image: url(../img/3.jpg);
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide1 {
+  background-image: url(../img/2.jpg);
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide2 {
+  background-image: url(../img/1.jpg);
+}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide3 {
+  background-image: url(../img/4.jpg);
+}
+
+/* 버튼 이벤트 */
+
+#wrap #main #section1 .slide-container .next-btn-wrap {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+#wrap #main #section1 .slide-container .next-btn-wrap a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section1 .slide-container .prev-btn-wrap {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+#wrap #main #section1 .slide-container .prev-btn-wrap a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#wrap #main #section2 {
+  width: 100%;
+  height: 200px;
+  background: #dcc;
+}
+
+#wrap #main #section2 .box {
+  float: left;
+  height: 200px;
+  width: 33.3333%;
+}
+#wrap #main #section2 .box1 {
+  background: #ddd;
+}
+
+/* 공지사항 타이틀*/
+
+#wrap #main #section2 .box1 .gap {
+  margin: 15px;
+}
+#wrap #main #section2 .box1 .gap .notice-title {
+  border-bottom: 1px solid #777;
+}
+#wrap #main #section2 .box1 .gap .notice-title ul {
+  padding: 5px 0 15px;
+}
+#wrap #main #section2 .box1 .gap .notice-title li:nth-child(1) {
+  float: left;
+}
+#wrap #main #section2 .box1 .gap .notice-title li:nth-child(2) {
+  float: right;
+}
+#wrap #main #section2 .box1 .gap .notice-title li h1 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+}
+#wrap #main #section2 .box1 .gap .notice-title li a {
+  display: inline-block;
+}
+#wrap #main #section2 .box1 .gap .notice-title li a img {
+  width: auto;
+}
+
+/* 공지사항 내용  */
+
+#wrap #main #section2 .box1 .gap .notice-content {
+  padding-top: 15px;
+}
+#wrap #main #section2 .box1 .gap .notice-content ul {
+  width: 100%;
+}
+#wrap #main #section2 .box1 .gap .notice-content ul li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#wrap #main #section2 .box1 .gap .notice-content ul li {
+  line-height: 25px;
+  background: url(../img/dot.gif) no-repeat 0 45%;
+  border-bottom: 1px dotted #777;
+}
+#wrap #main #section2 .box1 .gap .notice-content ul li:last-child {
+  border-bottom: 0;
+}
+#wrap #main #section2 .box1 .gap .notice-content ul li span:first-child {
+  float: left;
+  width: 165px;
+  display: block;
+}
+#wrap #main #section2 .box1 .gap .notice-content ul li span:first-child a {
+  font-size: 13px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-indent: 7px;
+}
+#wrap #main #section2 .box1 .gap .notice-content ul li span:last-child {
+  float: right;
+  width: 70px;
+  font-size: 12px;
+}
+
+#wrap #main #section2 .box2 {
+  background: rgb(163, 179, 182);
+}
+#wrap #main #section2 .box3 {
+  background: #edf;
+}
+
+#wrap #footer {
+  float: left;
+  width: 800px;
+  height: 100px;
+  background: #cc9;
+}
+
+#wrap #footer .left-box {
+  float: left;
+  width: 600px;
+  height: 100%;
+  background: rgb(233, 193, 223);
+}
+#wrap #footer .right-box {
+  float: left;
+  width: 200px;
+  height: 100%;
+}
+
+#wrap #footer .right-box .top {
+  width: 100%;
+  height: 50px;
+  background: rgb(217, 241, 188);
+}
+#wrap #footer .right-box .bottom {
+  width: 100%;
+  height: 50px;
+  background: rgb(187, 187, 212);
+}
+
+#wrap #modal {
+  z-index: 4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  display: none;
+}
+#wrap #modal .gap {
+  margin: 130px 350px;
+}
+#wrap #modal .gap .content {
+  width: 100%;
+  height: 250px;
+  background: #ddd;
+  border-radius: 80px;
+}
+#wrap #modal .gap .content h1 {
+  width: 80%;
+  font-size: 30px;
+  color: #555;
+  margin: 0 auto;
+  line-height: 200%;
+  padding-top: 75px;
+}

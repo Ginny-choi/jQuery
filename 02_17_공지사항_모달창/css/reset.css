@@ -1,0 +1,26 @@
+@charset "UTF-8"; 
+* {margin:0;padding:0;vertical-align: middle;}
+/* 중앙정렬 */
+html,body{width:100%;height:100%;}
+/* html */
+/* 스크롤바 생성 scroll <--> hidden */
+/* 스크롤바가 있다면 width여백은 줄어든다 */
+html {overflow-y:scroll;}
+/* overflow-y:세로/-x는 가로/ */
+
+body{font:normal 14px/1 'arial', 'sans-serif';color:#444;background:#fff;}
+/* 
+body{font-weight:normal; font-size:14px;line-height:1;font-family:'돋움', '굴림';color:#444;background:#fff;} 
+*/
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:14px;}
+/* 헤딩 테그는 기본적으로 굵기와 크기가 설정 되기 때문에 또 한번 더 리셋을해줘야한다 */
+em,i,address {font-size:normal;}
+ul,li {list-style:none;}
+.clearfix::after {content:'';display:block;clear:both;}
+.blind {display:block;text-indent: -2000px;overflow:hidden;}
+/* 링크 태그  */
+a {color:#444; text-decoration:none;}
+table {border-collapse:collapse;}
+
+/* 시멘틱 태그 */
+header,main,section,footer,nav {display:block;}
